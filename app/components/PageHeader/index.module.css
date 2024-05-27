@@ -1,0 +1,26 @@
+.headerBox {
+  background-color: #ffffff;
+  width: 100vw-228px;
+  height: 80px;
+  display: flex;
+  border-radius: 8px;
+}
+.header {
+  font-weight: 800;
+  font-size: 24px;
+  align-self: center;
+  margin-left: 24px;
+}
+.userImage {
+  width: 30px;
+  height: 30px;
+}
+.userInfo {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  font-weight: 500;
+  font-size: 16px;
+  margin-left: auto;
+  margin-right: 24px;
+}
