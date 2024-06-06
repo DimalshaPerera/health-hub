@@ -6,13 +6,44 @@
   padding: 11px 27px 24px 27px;
 }
 
-.title {
-  font-size: 16px;
-  font-weight: 800;
+.titleWrapper {
   display: flex;
   justify-content: space-between;
+  color: #707070;
+  font-size: 14px;
+  color: #707070;
+  font-weight: 700;
+}
+.inputFields {
+  border: 1px solid #707070;
+  border-radius: 6px;
+  height: 32px;
+  margin-top: 3px;
+  margin-bottom: 14px;
+  font-weight: 500;
+  font-size: 14px;
+  color: #1e1e1e;
+  padding-left: 12px;
+  width: 250px;
+}
+.hLine {
+  width: 220px;
+
+  align-self: center;
+  border: 1px solid #d3d3d3;
+}
+.complain {
+  display: flex;
+}
+.durationInput {
+  width: 60px;
+}
+.add {
+  background-color: #eeeeee;
+  border: none;
   width: 100%;
+  display: flex;
   align-items: center;
-  height: fit-content;
-  width: 100%;
+  justify-content: center;
+  cursor: pointer;
 }

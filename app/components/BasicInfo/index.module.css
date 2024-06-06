@@ -1,21 +1,17 @@
 .mainBox {
   background-color: #ffffff;
-
   border-radius: 8px;
   margin-bottom: 16px;
   padding: 11px 27px 24px 27px;
 }
 
 .title {
-  font-size: 16px;
-  font-weight: 800;
   display: flex;
   justify-content: space-between;
   width: 100%;
   align-items: center;
   height: fit-content;
   width: 100%;
-  /* margin: 20px auto auto 27px; */
 }
 .imgIcon {
   width: 40px;
@@ -23,7 +19,6 @@
   background-color: #eeeeee;
   border-radius: 100%;
   display: flex;
-
   justify-content: center;
   align-items: center;
 }
@@ -37,6 +32,7 @@
   border: 1px solid #707070;
   border-radius: 6px;
   height: 32px;
+  width: 100%;
 
   font-weight: 500;
   font-size: 14px;
@@ -49,58 +45,61 @@
 .grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 18px;
+  gap: 28px;
 }
-.gridComponents {
-  display: grid;
 
-  gap: 4px;
-}
-/* .inputLine {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-} */
 .gridSubComponents {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 4px;
+  gap: 12px;
 }
 
 .rowComponents {
   display: grid;
-  grid-template-rows: repeat(2, 1fr);
   gap: 12px;
 }
 .bmiVal {
   background-color: #4169e1;
-  border-radius: 6px;
 
   border: 1px solid #4169e1;
-  border-radius: 6px;
-  height: 32px;
-  width: auto;
-
   font-weight: 700;
-  font-size: 14px;
+
   color: #ffffff;
-  padding-left: 12px;
+  display: flex;
+
+  align-items: center;
 }
 .genderGrp {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  display: flex;
   gap: 12px;
 }
 .genderCard {
   background-color: #eeeeee;
+  font-size: 14px;
+  width: 60px;
   height: 70px;
-  width: auto;
+  text-align: center;
+  padding-top: 20px;
+  border-radius: 6px;
+}
+.gender {
+  font-weight: 500;
+  color: #707070;
 }
 .genderBtn input[type="radio"] {
-  opacity: 0;
+  display: none;
 }
 .genderIcon {
   height: 22px;
   width: 22px;
 }
-.dateInput {
+.units {
+  position: absolute;
+  color: #1e1e1e;
+  font-size: 14px;
+  font-weight: 500;
+  right: 11px;
+}
+.inputLine {
+  position: relative;
 }

@@ -7,7 +7,7 @@ const BasicInfo = () => {
   return (
     <div className={styles.mainBox}>
       <div className={styles.title}>
-        <h5>Basic Information</h5>
+        <h4>Basic Information</h4>
         <div className={styles.imgIcon}>
           <FaImage />
         </div>
@@ -50,7 +50,7 @@ const BasicInfo = () => {
                   type="date"
                   id="dob"
                   name="dob"
-                  className={`${styles.inputFields} ${styles.dateInput}`}
+                  className={styles.inputFields}
                   placeholder="31/12/2023"
                 />
               </div>
@@ -62,7 +62,7 @@ const BasicInfo = () => {
                   type="number"
                   id="age"
                   name="age"
-                  className={`${styles.inputFields} ${styles.dateInput}`}
+                  className={styles.inputFields}
                   placeholder="20"
                 />
               </div>
@@ -112,7 +112,7 @@ const BasicInfo = () => {
                 <div className={styles.genderCard}>
                   <PiGenderMaleBold className={styles.genderIcon} />
 
-                  <span>Male</span>
+                  <div className={styles.gender}>Male</div>
                 </div>
               </label>
               <label className={styles.genderBtn}>
@@ -120,7 +120,7 @@ const BasicInfo = () => {
                 <div className={styles.genderCard}>
                   <PiGenderFemaleBold className={styles.genderIcon} />
 
-                  <span>Female</span>
+                  <div className={styles.gender}>Female</div>
                 </div>
               </label>
             </div>
@@ -132,12 +132,14 @@ const BasicInfo = () => {
                   <label htmlFor="height" className={styles.labels}>
                     Height
                   </label>
+
                   <input
                     type="number"
                     id="height"
                     name="height"
                     className={styles.inputFields}
                   />
+                  <span className={styles.units}>cm</span>
                 </div>
                 <div className={styles.inputLine}>
                   <label htmlFor="weight" className={styles.labels}>
@@ -149,10 +151,13 @@ const BasicInfo = () => {
                     name="weight"
                     className={styles.inputFields}
                   />
+                  <span className={styles.units}>kg</span>
                 </div>
               </div>
               <div className={styles.rowComponents}>
-                <div className={styles.bmiVal}>BMI</div>
+                <div className={`${styles.inputFields} ${styles.bmiVal}`}>
+                  BMI
+                </div>
               </div>
             </div>
           </div>
